@@ -8,7 +8,7 @@ public class SpeedTrigger80 : MonoBehaviour
     {
         //Debug.Log("Trigger!");
         Debug.Log(VehicleSpeedScript.vehicleSpeed);
-        if (VehicleSpeedScript.vehicleSpeed > 80)
-        RulesBrokenScript.rulesBroken += 1;
+        if (VehicleSpeedScript.vehicleSpeed > 80 && StartStopButton.active)
+            RulesBrokenScript.rulesBroken += 1;
     }
 }

@@ -7,6 +7,7 @@ public class VehicleSpeedScript : MonoBehaviour
     public static float vehicleSpeed;
     public static float distanceTravelled;
     public float msToKmh = 3.6F;
+    public bool active = false;
 
     // Start is called before the first frame
     void Start()
@@ -17,14 +18,17 @@ public class VehicleSpeedScript : MonoBehaviour
     IEnumerator CalcSpeed()
     {
         bool isPlaying = true;
+        
 
         while (isPlaying)
         {
+            bool active = StartStopButton.active;
             Vector3 prevPos = transform.position;
 
             yield return new WaitForFixedUpdate();
-            
-            distanceTravelled += Vector3.Distance(transform.position, prevPos);
+            if (active) {
+                distanceTravelled += Vector3.Distance(transform.position, prevPos);
+            }
             vehicleSpeed = Mathf.RoundToInt(msToKmh * (Vector3.Distance(transform.position, prevPos) / Time.fixedDeltaTime));
         }
     }
