@@ -9,6 +9,7 @@ public class RulesBrokenScript : MonoBehaviour
     {
         {"Speeding", 0}
     };
+    public static List<string> keys = new List<string>(rulesBrokenType.Keys);
     public static int rulesBroken = 0;
     TMPro.TextMeshProUGUI rulesBrokenText; 
 

@@ -34,9 +34,9 @@ public class StartStopButton : MonoBehaviour
 
             File.AppendAllText(path, content);
 
-            foreach(KeyValuePair<string, int> entry in RulesBrokenScript.rulesBrokenType) {
-                File.AppendAllText(path, entry.Key + ": " + entry.Value);
-                RulesBrokenScript.rulesBrokenType[entry.Key] = 0;
+            foreach(string key in RulesBrokenScript.keys) {
+                File.AppendAllText(path, key + ": " + RulesBrokenScript.rulesBrokenType[key]);
+                RulesBrokenScript.rulesBrokenType[key] = 0;
             }
 
             VehicleSpeedScript.distanceTravelled = 0;
