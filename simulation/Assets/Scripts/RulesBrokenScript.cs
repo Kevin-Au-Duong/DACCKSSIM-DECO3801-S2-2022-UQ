@@ -5,15 +5,18 @@ using UnityEngine.UI;
 
 public class RulesBrokenScript : MonoBehaviour
 {
+    public static Dictionary<string, int> rulesBrokenType = new Dictionary<string, int>()
+    {
+        {"Speeding", 0}
+    };
     public static int rulesBroken = 0;
     TMPro.TextMeshProUGUI rulesBrokenText; 
-    // Start is called before the first frame update
+
     void Start()
     {
         rulesBrokenText = GetComponent<TMPro.TextMeshProUGUI> ();
     }
 
-    // Update is called once per frame
     void Update()
     {
         rulesBrokenText.text = "Rules Broken : " + rulesBroken;

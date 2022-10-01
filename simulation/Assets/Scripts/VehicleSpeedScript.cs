@@ -7,9 +7,7 @@ public class VehicleSpeedScript : MonoBehaviour
     public static float vehicleSpeed;
     public static float distanceTravelled;
     public float msToKmh = 3.6F;
-    public bool active = false;
 
-    // Start is called before the first frame
     void Start()
     {
         StartCoroutine(CalcSpeed());
@@ -18,7 +16,6 @@ public class VehicleSpeedScript : MonoBehaviour
     IEnumerator CalcSpeed()
     {
         bool isPlaying = true;
-        
 
         while (isPlaying)
         {
