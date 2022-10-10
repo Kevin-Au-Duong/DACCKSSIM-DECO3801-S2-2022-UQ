@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using System.Linq;
 
 public class StartStopButton : MonoBehaviour
 {
@@ -24,22 +25,26 @@ public class StartStopButton : MonoBehaviour
     public void dataDump()
     {
         if (!active) {
-            string path = Application.dataPath + "/" + startDrive.ToString("MMM-dd-yyyy hh.mm.ss") + ".txt";
+            string path = Application.dataPath + "/save.txt";
 
-            string content = "Drive Start: " + startDrive + "\n"
-            + "Drive End: " + System.DateTime.Now + "\n"
-            + "Distance Driven: " + VehicleSpeedScript.distanceTravelled + "\n"
-            + "Time Driven: " + (System.DateTime.Now - startDrive) + "\n"
-            + "Number of road rules broken: " + RulesBrokenScript.rulesBroken + "\n";
+            string content = startDrive + ","
+            + System.DateTime.Now + ","
+            + VehicleSpeedScript.distanceTravelled + ","
+            + (System.DateTime.Now - startDrive) + ",";
 
             File.AppendAllText(path, content);
 
             foreach(string key in RulesBrokenScript.keys) {
-                File.AppendAllText(path, key + ": " + RulesBrokenScript.rulesBrokenType[key]);
+                if (key.Equals(RulesBrokenScript.keys.Last())) {
+                    File.AppendAllText(path, key + ":" + RulesBrokenScript.rulesBrokenType[key] + "\n");
+                } else {
+                    File.AppendAllText(path, key + ":" + RulesBrokenScript.rulesBrokenType[key] + ",");
+                }
                 RulesBrokenScript.rulesBrokenType[key] = 0;
             }
 
             VehicleSpeedScript.distanceTravelled = 0;
+            VehicleSpeedScript.speedLimitActive = false;
             RulesBrokenScript.rulesBroken = 0;
         } else {
             startDrive = System.DateTime.Now;
