@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpeedLimitScript : MonoBehaviour
 {
-    TMPro.TextMeshProUGUI speedLimitText;
+    TMPro.TextMeshProUGUI speedLimitText; // Text component of object that this is attached to
 
     void Start()
     {
@@ -12,13 +10,15 @@ public class SpeedLimitScript : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
         speedLimitText.text = "Speed Limit : " + VehicleSpeedScript.speedLimit + " km/h";
-        if (VehicleSpeedScript.speedLimitActive) {
+        if (VehicleSpeedScript.speedLimitActive)
+        {
             speedLimitText.color = Color.green;
-        } else {
+        }
+        else
+        {
             speedLimitText.color = Color.red;
         }
     }
-    
 }

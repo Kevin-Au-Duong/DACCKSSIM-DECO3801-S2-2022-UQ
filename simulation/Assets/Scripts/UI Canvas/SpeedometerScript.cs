@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpeedometerScript : MonoBehaviour
 {
-    TMPro.TextMeshProUGUI vehicleSpeedText;
-    
+    TMPro.TextMeshProUGUI vehicleSpeedText; // Text component of object that this is attached to
+
     void Start()
     {
         vehicleSpeedText = GetComponent<TMPro.TextMeshProUGUI>();

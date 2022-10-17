@@ -1,12 +1,13 @@
-using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
+// Edited version of AxisTouchButton.cs in Assets\Asset Store\Standard Assets\CrossPlatformInput\Scripts\
+// Designed to work with VehicleStandardInput.cs in Assets\Asset Store\EVP5\Scripts\
 
 namespace UnityStandardAssets.CrossPlatformInput
 {
     public class BrakeSteerButtons : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
-        // (typically with one having -1 and one having 1 axisValues)
         public string axisName; // The name of the axis
         public float axisValue = 1; // The axis that the value has
         public float responseSpeed; // The speed at which the axis touch button responds
