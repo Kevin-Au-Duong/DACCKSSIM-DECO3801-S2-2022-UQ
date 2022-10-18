@@ -11,6 +11,14 @@ Required:
 $ git clone https://github.com/Kevin-Au-Duong/RUSH-DECO3801/simulation.git
 ```
 
+Assets used:
+
+- [Standard Assets (for Unity 2018.4)](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2018-4-32351)
+- [Edy's Vehicle Physics](https://assetstore.unity.com/packages/tools/physics/edy-s-vehicle-physics-403)
+- [Vehicle Physics Pro - Community Edition](https://assetstore.unity.com/packages/tools/physics/vehicle-physics-pro-community-edition-153556)
+- [Australian Street Sign Pack](https://assetstore.unity.com/packages/3d/environments/urban/australian-street-sign-pack-213047)
+- [FREE Traffic Essentials Asset Pack](https://assetstore.unity.com/packages/3d/props/free-traffic-essentials-asset-pack-125092)
+
 To run in Unity:
 
 - Open Unity
