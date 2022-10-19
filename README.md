@@ -6,6 +6,7 @@ An interactive software made in Unity that acts as the backend for the [DACCKSCA
 Required:
 
 - [Unity Editor v2022.1.14f](https://unity3d.com/get-unity/download/archive)
+- [Git](https://git-scm.com/downloads)
 
 ```bash
 $ git clone https://github.com/Kevin-Au-Duong/DACCKSSIM-DECO3801-S2-2022-UQ/simulation.git
