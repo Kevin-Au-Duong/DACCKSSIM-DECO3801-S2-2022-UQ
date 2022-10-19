@@ -1,4 +1,4 @@
-# RUSH-DECO3801
+# DACCKSSIM
 An interactive software (game but not really) that will make Aussies become safer drivers. Guarantee to decrease the nation's traffic fatality rate to absolute 0, or even negative. It's so good it'll bring the dead back to life.
 
 ## 🔧 Setting up Local Development (Simulation)
@@ -8,7 +8,7 @@ Required:
 - [Unity Editor v2022.1.14f](https://unity3d.com/get-unity/download/archive)
 
 ```bash
-$ git clone https://github.com/Kevin-Au-Duong/RUSH-DECO3801/simulation.git
+$ git clone https://github.com/Kevin-Au-Duong/DACCKSSIM-DECO3801-S2-2022-UQ/simulation.git
 ```
 
 Assets used:
