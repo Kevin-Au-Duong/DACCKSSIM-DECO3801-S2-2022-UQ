@@ -1,4 +1,4 @@
-# DACCKSSIM
+# 📷 DACCKSSIM
 An interactive software made in Unity that acts as the backend for the [DACCKSCAM](https://github.com/Kevin-Au-Duong/DACCKSCAM-DECO3801-S2-2022-UQ) application.
 
 ## 🔧 Setting up Local Development (Simulation)
