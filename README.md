@@ -34,6 +34,7 @@ Once you have opened the project:
 
 - Go to `File` and `Build Settings...`
 - In the `Platform` window, select `Android` but [if Android is greyed out you must install some dependencies first](https://docs.unity3d.com/2022.1/Documentation/Manual/android-sdksetup.html)
+- Change relevant settings in `Player Settings...` if required
 - Click `Build` and select the destination for where you would like the APK to be saved
 - Click `Save` and wait
 
