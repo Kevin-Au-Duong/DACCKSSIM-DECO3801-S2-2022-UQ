@@ -1,5 +1,5 @@
 # DACCKSSIM
-An interactive software (game but not really) that will make Aussies become safer drivers. Guarantee to decrease the nation's traffic fatality rate to absolute 0, or even negative. It's so good it'll bring the dead back to life.
+An interactive software made in Unity that acts as the backend for the [DACCKSCAM](https://github.com/Kevin-Au-Duong/DACCKSCAM-DECO3801-S2-2022-UQ) application.
 
 ## 🔧 Setting up Local Development (Simulation)
 
